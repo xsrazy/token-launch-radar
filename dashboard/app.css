@@ -144,16 +144,16 @@ td.rank.top3 { color: var(--accent); }
 .num { text-align: right; white-space: nowrap; }
 .up { color: var(--up); }
 .down { color: var(--down); }
-.bar { position: relative; height: 18px; min-width: 150px; }
+.bar { display: block; position: relative; height: 22px; min-width: 150px; background: rgba(240, 180, 41, .07); border-radius: 4px; }
 .bar i {
   position: absolute;
-  left: 0;
+  right: 0;
   top: 0;
   bottom: 0;
   background: linear-gradient(90deg, rgba(240, 180, 41, .35), rgba(240, 180, 41, .85));
   border-radius: 4px;
 }
-.bar span { position: relative; font-weight: 600; }
+.bar span { position: relative; display: block; text-align: right; padding-right: 6px; line-height: 22px; font-weight: 600; }
 .empty, .live-note { color: var(--muted); background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: 16px; }
 .model {
   margin-top: 22px;
